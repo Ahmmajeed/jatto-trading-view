@@ -17,7 +17,14 @@
   <button>Refresh</button>
 </header>
   <main>
-    <main>
+  <input type="text" id="tickerInput" placeholder="Search ticker..." />
+  <button onclick="updateChart()">Load Ticker</button>
+  <p>Welcome to your trading dashboard.</p>
+
+  <div class="tradingview-widget-container">
+    <div id="tradingview_chart"></div>
+  </div>
+</main>
   <input type="text" placeholder="Search ticker..." />
   <p>Welcome to your trading dashboard.</p>
 
