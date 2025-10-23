@@ -17,3 +17,6 @@ function updateChart() {
     container_id: "tradingview_chart"
   });
 }
+
+// Load default chart on page load
+window.onload = updateChart;
