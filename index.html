@@ -8,15 +8,26 @@
 </head>
 <body>
   <header>
-    <img src="jattocoin.png" alt="JattoCoin Logo" style="height: 40px;" />
+    <img src="jattocoin.png" alt="JattoCoin Logo" />
     <h1>Jatto Trading View</h1>
     <button onclick="location.reload()">Refresh</button>
+    <label>
+      <input type="checkbox" id="themeToggle" onchange="toggleTheme()" />
+      Light Mode
+    </label>
   </header>
 
   <main>
+    <select id="tickerHistory" onchange="loadFromHistory()">
+      <option value="">Recent tickers</option>
+    </select>
+
     <input type="text" id="tickerInput" placeholder="Search ticker..." />
     <button onclick="updateChart()">Load Ticker</button>
+
     <p>Welcome to your trading dashboard.</p>
+
+    <div id="cryptoTracker">Loading crypto prices...</div>
 
     <div class="tradingview-widget-container">
       <div id="tradingview_chart"></div>
@@ -27,8 +38,7 @@
     &copy; 2025 Jatto Inc. All rights reserved.
   </footer>
 
-  <!-- TradingView script must be loaded before widget -->
   <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
