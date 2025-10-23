@@ -82,3 +82,38 @@ footer {
     font-size: 0.9rem;
   }
 }
+@media (max-width: 600px) {
+  header, main, footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  header {
+    gap: 1rem;
+  }
+
+  input, button, select {
+    width: 100%;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  #cryptoTracker {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+
+  #tradingview_chart {
+    height: 400px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+}
