@@ -24,15 +24,19 @@
 
     <input type="text" id="tickerInput" placeholder="Search ticker..." />
     <button onclick="updateChart()">Load Ticker</button>
-
+<input type="number" id="alertPrice" placeholder="Set alert price..." />
+<div id="alertMessage" style="margin-top: 1rem;"></div>
     <p>Welcome to your trading dashboard.</p>
 
     <div id="cryptoTracker">Loading crypto prices...</div>
 
     <div class="tradingview-widget-container">
       <div id="tradingview_chart"></div>
-    </div>
-  </main>
+    <div id="newsFeed">
+  <h3>Latest News</h3>
+  <ul id="newsList"></ul>
+</div>
+  
 
   <footer>
     &copy; 2025 Jatto Inc. All rights reserved.
